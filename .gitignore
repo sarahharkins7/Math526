@@ -1,0 +1,7 @@
+*.log
+*.pdf
+*.aux
+.DS_Store
+/data
+/figures
+*.synctex(busy)

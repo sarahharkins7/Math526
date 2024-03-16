@@ -1,0 +1,98 @@
+\documentclass{beamer}
+\usetheme{utk}
+\usepackage{outlines}
+
+
+\title[Spectral and Hierarchical Clustering]{Spectral Clustering and Hierarchical Clustering}
+\author{Roxana Barrios, Charlotte Beckford, and Sarah Harkins}
+\institute{Math 526}
+
+% Need to figure out how to set the date in the .sty document. It is inserting the current date. 
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\begin{center}
+  \textcolor{TennesseeOrange}{\huge Spectral Clustering}  
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Notation}
+
+\begin{itemize}
+    \item Let $G = (V,E)$ be an \textbf{undirected graph} with the set of vertices $V = \{ v_1, \dots v_n\}$ and the set of edges, $E$.  
+    \item We will assume that $G$ is weighted with \textbf{non-negative weights} $w_{i,j}$ corresponding to the edge between the vertices $v_i$ and $v_j$. The weights are contained in the \textbf{adjacency matrix}, $W = (w_{i,j})_{i,j = 1, \dots , n}$. In an undirected graph, $w_{i,j} = w_{j,i}$. 
+    \item The \textbf{degree} of a vertex $v_i$  $$d_i = \sum_{j=1}^{n} w_{i,j}$$ This forms the degree matrix $D= diag(d_1, \dots , d_n)$
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Similarity}
+The similarity of vertices $v_i$ and $v_j$ are given by $s_{i,j}$ and is used to weight the edge between those vertices. There are multiple ways to compute similarity. 
+
+\begin{outline}
+    \1 Euclidean Distance
+        \2 $s_{i,j} = \| v_i, v_j\|_2$
+    \1 Manhattan Distance
+        \2 $s_{i,j} = \sum_{i=1}^{n} | v_i - v_j|$
+    \1 Gaussian Similarity Function
+        \2 $s_{i,j} = exp(\| v_i, v_j\|^2 / (2\sigma^2))$
+            \3 $\sigma$ control the size of the neighborhood 
+\end{outline}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Similarity Graphs}
+
+
+\begin{outline}
+    \1 $\epsilon$- neighborhood Graph
+        \2 Fix $\epsilon >0$. If  $s_{i,j} > \epsilon$, then the respective nodes are considered connected. This is an unweighted graph. 
+    \1 $k$- nearest Neighbor Graph
+        \2 
+    \1 Fully Connected Graph
+        \2 All vertices are connected and the edges have weights $s_{i,j}$. 
+\end{outline}
+
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Graph Laplacian}
+\begin{outline}
+ \1 Unnormalized Graph Laplacian
+   \2 Sub item
+     \3 sub sub item
+ \1 Normalized Graph Laplacian
+\end{outline}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+  \textcolor{TennesseeOrange}{\huge Hierarchical Clustering}  
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{title}
+And this is my content
+\end{frame}
+
+
+\begin{frame}
+\frametitle{References}
+And this is my content
+\end{frame}
+
+\end{document}
