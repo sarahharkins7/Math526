@@ -1,6 +1,16 @@
+# files from LaTeX compilation
 *.log
 *.pdf
 *.aux
+*.fdb_latexmk
+*.fls 
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+
 .DS_Store
 /data
 /figures
