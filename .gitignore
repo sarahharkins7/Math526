@@ -10,6 +10,9 @@
 *.synctex.gz
 *.toc
 
+#python notebook checkpoints
+.ipynb_checkpoints
+
 
 .DS_Store
 /data
