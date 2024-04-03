@@ -1,6 +1,6 @@
-Spectral and Hierarchical Cluistering 
+Spectral and Hierarchical Clustering 
 
 Math 526 - Statistics Presentation 
 
-Example code of spectral clustering, agglomerative hierarchical clustering, and divisive hierarchical clustering 
+Example codes of spectral clustering, agglomerative hierarchical clustering, and divisive hierarchical clustering 
 
